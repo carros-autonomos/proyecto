@@ -1,0 +1,1090 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 { font-size: 4.3em; }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2em; }
+p { font-size: 1.25em; }
+ul { list-style: none; }
+li { font-size: 1.25em; }
+
+button {
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(13, 21, 134, 0.966);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.966);
+    color: aliceblue;
+    background-color: darkblue;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(121, 123, 110);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(78, 158, 134);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(7, 7, 7, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://media.somoselectricos.com/wp-content/uploads/2025/01/coche-autonomo-futurista-madrid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#miguel-omar .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#mas-sobre-los-carros-automaticos {
+    display: none; /
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 850px) {
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #mas-sobre-los-carros-automaticos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #mas-sobre-los-carros-automaticos .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mas-sobre-los-carros-automaticos h2 {
+        margin-top: 0px;
+    }
+
+    #mas-sobre-los-carros-automaticos .img-container {
+        background-image: url("https://media.istockphoto.com/id/1383104602/es/foto/ia-de-autom%C3%B3viles-modernos-que-eval%C3%BAa-las-condiciones-de-conducci%C3%B3n-y-los-elementos-de-la-calle.jpg?s=612x612&w=0&k=20&c=5_e5kcbhh4MOY2E0ep03z-JJbAFnqIRJbiii85fDLGY=");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #mas-sobre-los-carros-automaticos .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mas-sobre-los-carros-automaticos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mas-sobre-los-carros-automaticos h2 {
+        font-size: 4em;
+    }
+
+    #mas-sobre-los-carros-automaticos h3 {
+        margin-top: 0;
+    }
+
+    #mas-sobre-los-carros-automaticos .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnS5rD2L1CegKObq-vaPJHArUqibKvRSB7Xw&s");
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("https://noa.aon.es/wp-content/uploads/2022/10/digitalizacion-vehiculo-autonomo.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("https://static.eldiario.es/clip/f1632b60-f2ff-4ade-9aee-c3045a321de3_16-9-discover-aspect-ratio_default_0.jpg");
+    }
+
+    #caracteristicas {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+#main-container {
+    margin: 150px auto;
+    width: 600px;
+}
+
+table {
+    background-color: rgb(237, 241, 240);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+thead {
+    background-color: rgb(6, 59, 6);
+    border-bottom: rgba(79, 205, 205, 0) 5px;
+    color: rgb(240, 255, 255);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+tr:hover td {
+    background-color: rgb(203, 203, 206);
+    color: azure;
+}
+
+
+#mas-sobre-los-carros-automaticos2 {
+    background: linear-gradient(135deg, #1b1a1a, #2c2b2b);
+    color: #eee;
+    text-align: center;
+    padding: 60px 15px 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#mas-sobre-los-carros-automaticos2 h2 {
+    font-size: 3.8em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fafafa;
+}
+
+
+#mas-sobre-los-carros-automaticos2 .programas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+#mas-sobre-los-carros-automaticos2 .carta {
+    background: rgba(40, 40, 40, 0.85);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#mas-sobre-los-carros-automaticos2 .carta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+    background: rgba(60, 60, 60, 0.95);
+}
+
+
+#mas-sobre-los-carros-automaticos2 .carta h3 {
+    font-size: 1.9em;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: #f0f0f0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+
+#mas-sobre-los-carros-automaticos2 .carta p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+
+@media (max-width: 1000px) {
+    #mas-sobre-los-carros-automaticos2 .programas {
+        justify-content: center;
+    }
+    
+    #mas-sobre-los-carros-automaticos2 .carta {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #mas-sobre-los-carros-automaticos2 h2 {
+        font-size: 2.8em;
+        margin-bottom: 25px;
+    }
+
+    #mas-sobre-los-carros-automaticos2 .carta h3 {
+        font-size: 1.5em;
+    }
+
+    #mas-sobre-los-carros-automaticos2 .carta p {
+        font-size: 1em;
+    }
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0f1210;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.8em;
+    color: #2196F3;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #131111;
+    margin-bottom: 15px;
+}
+
+
+h2, h3 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+p, h2, h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+body {
+    padding-top: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.container p {
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 40px;
+}
+
+
+ul.niveles {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+ul.niveles li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
+
+
+ul.niveles li strong {
+    color: #21b45e;
+    font-weight: bold;
+}
+
+
+ul.niveles li:hover {
+    background-color: #dfe6e9;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+ul.niveles li:last-child {
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+.contenido {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2, h3 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+
+.temas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 30%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .temas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+#smartphones * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#smartphones {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+#smartphones header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#smartphones header h1 {
+    font-size: 2.5rem;
+}
+
+
+#smartphones nav {
+    background-color: #2a5298;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#smartphones nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#smartphones nav a:hover {
+    color: #ffd700;
+}
+
+
+#smartphones section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+#smartphones section h2 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+    border-left: 6px solid #2a5298;
+    padding-left: 10px;
+}
+
+#smartphones section ul,
+#smartphones section ol {
+    margin-left: 20px;
+}
+
+
+#smartphones table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#smartphones table th,
+#smartphones table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#smartphones table th {
+    background-color: #2a5298;
+    color: #fff;
+}
+
+
+#smartphones .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+#smartphones .gallery img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    width: 30%;
+}
+
+#smartphones .gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+#smartphones .faq {
+    background-color: #eef4ff;
+    border-left: 4px solid #2a5298;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+#smartphones .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#smartphones .contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#smartphones .contact-form input,
+#smartphones .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+#smartphones .contact-form button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #2a5298;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#smartphones .contact-form button:hover {
+    background-color: #1e3c72;
+}
+
+/* Pie de página */
+#smartphones footer {
+    background-color: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+#smartphones footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#smartphones footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    #smartphones nav {
+        flex-direction: column;
+    }
+
+    #smartphones .gallery img {
+        width: 100%;
+    }
+
+    #smartphones table th,
+    #smartphones table td {
+        font-size: 0.9rem;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 5px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e0e7ff;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+  }
+  
+  .contact-form input {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+  }
+  
+  .contact-form button {
+    background-color: #1e40af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  
+  .gallery {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  
+  .gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .faq {
+    margin-bottom: 20px;
+  }
+  
+  .faq strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #1e3a8a;
+  }
+  
+
+  ul, ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  ul li, ol li {
+    margin-bottom: 6px;
+  }
+  
+  
+  canvas {
+    margin-top: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 15px;
+    }
+  
+    table, thead, tbody, th, td, tr {
+      font-size: 14px;
+    }
+  
+    .gallery {
+      justify-content: center;
+    }
+  
+    .gallery img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+ul, ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.faq {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.faq strong {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table, table th, table td {
+        font-size: 14px;
+    }
+}
+  
